@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/addcake2/" method="post">
+        {% csrf_token %}
+        cake name
+        <input type="text" name="cakename"> <br> <br>
+        price
+        <input type="text" name="price"> <br> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

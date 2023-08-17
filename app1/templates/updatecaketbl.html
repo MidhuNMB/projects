@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/updatecake/{{data.id}}" method="post">
+        {% csrf_token %}
+        cake name
+        <input type="text" name="cakename" value="{{data.cakename}}"> <br> <br>
+        price
+        <input type="text" name="price" value="{{data.price}}"> <br> <br>
+        <input type="submit">
+    
+</body>
+</html>
